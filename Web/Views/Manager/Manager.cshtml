@@ -1,0 +1,62 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>样书申请表</title>
+    <link href="~/layui-excel/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/layui-excel/layui/layui.js"></script>
+    <script type="text/javascript">
+        var username = '<%= session.getAttribute("username")%>';
+    </script>
+    </head>
+<body>
+    <div style="display: none" id="movepass">
+        <blockquote class="layui-elem-quote"><h6>修改密码</h6></blockquote>
+        <form>
+            <table class="layui-table">
+                <tr>
+                    <td><label class="layui-form-label-col">账户</label></td>
+                    <td><input class="layui-input" type="text" value="@Session["username"]" readonly="readonly" id="username" name="username" /></td>
+                </tr>
+                <tr>
+                    <td><label class="layui-form-label-col">请输入旧密码</label></td>
+                    <td><input class="layui-input" type="password" id="password" name="oldpassworld" /></td>
+                </tr>
+                <tr>
+                    <td><label class="layui-form-label-col">请输入新密码</label></td>
+                    <td><input class="layui-input" type="password" id="newpassworld" name="newpassworld" /></td>
+                </tr>
+                <tr>
+                    <td><label class="layui-form-label-col">请再次确认新密码</label></td>
+                    <td><input class="layui-input" type="password" id="suerpassworld" name="suerpassworld" /></td>
+
+                </tr>
+                <tr>
+                    <td><button type="button" id="submit" lay-submit class="layui-btn layui-btn-normal">保存</button></td>
+                    <td><button type="reset" lay-submit class="layui-btn layui-btn-normal">清空</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script type="text/html" id="tools">
+        <input type="text" name="where" placeholder="请输入条件" id="where" lay-event="where" class="layui-input" style="display:inline;width:10%" />
+        <button class="layui-btn layui-btn-warm  layui-btn-xs" lay-event="query">查询</button>
+        <button class="layui-btn layui-btn-normal layui-btn-xs" lay-event="export">导出</button>
+        <button class="layui-btn layui-btn-normal layui-btn-xs" lay-event="password">改密</button>
+        <button class="layui-btn layui-btn-normal layui-btn-xs" lay-event="out">登出</button>
+    </script>
+
+    <div class="layui-container">
+        <div class="layui-row">
+            <table id="test" lay-filter="test"></table>
+        </div>
+    </div>
+</body>
+</html>
+<script src="~/js/Manager.js"></script>

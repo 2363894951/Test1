@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="helpsModelStoreContainer" CdmEntityContainer="helpsEntities">
+    <EntitySetMapping Name="admin">
+      <EntityTypeMapping TypeName="helpsModel.admin">
+        <MappingFragment StoreEntitySet="admin">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mis_manager">
+      <EntityTypeMapping TypeName="helpsModel.mis_manager">
+        <MappingFragment StoreEntitySet="mis_manager">
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="logDate" ColumnName="logDate" />
+          <ScalarProperty Name="class" ColumnName="class" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="addres" ColumnName="addres" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

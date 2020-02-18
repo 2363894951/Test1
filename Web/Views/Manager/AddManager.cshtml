@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>样书申请表</title>
+    <link href="~/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/layui/layui.js"></script>
+</head>
+<body>
+<center >
+    <blockquote class="layui-elem-quote"><h6>玟韬实业快递样书申请表</h6></blockquote>
+    <form action="" id="addform">
+        <table class="layui-table">
+            <colgroup>
+                <col width="150">
+                <col width="200">
+                <col>
+            </colgroup>
+            <thead>
+            <tr>
+                <th>标题</th>
+                <th>输入</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>姓名</th>
+                <td><input class="layui-input" placeholder="请输入姓名" lay-verify="required" name="name"/></td>
+            </tr>
+        
+            <tr>
+                <th>收件地址</th>
+                <td><input class="layui-input" placeholder="请输入收件地址" lay-verify="required" name="addres"/></td>
+            </tr>
+            <tr>
+                <th>电话</th>
+                <td><input class="layui-input" placeholder="请输入电话号码" type="number" lay-verify="required|phone|number" name="phone"/></td>
+            </tr>
+            <tr>
+                <th>任教科目</th>
+                <td><input class="layui-input" placeholder="请输入任教科目" lay-verify="required" name="subject"/></td>
+            </tr>
+            <tr>
+                <th>年级</th>
+                <td><input class="layui-input" placeholder="请输入年级" lay-verify="required" name="class"/></td>
+            </tr>
+
+            <input class="layui-input"  id="data" placeholder="请选择日期"   type="hidden" lay-verify="date" name="logDate"/>
+            
+            <tr>
+                <th><h2>请输入备注内容！如果没有可以为空</h2></th>
+                <td>
+                    <textarea name="remarks" style="height:400px" required lay-verify="required" placeholder="请输入备注" class="layui-textarea"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" id="submit"  lay-submit  lay-filter="*"
+                            class="layui-btn layui-btn-normal">保存</button>
+                </td>
+                <td>
+                    <button type="reset" class="layui-btn layui-btn-warm">重置</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <div style="width:300px;display: none" id="wx">
+             <div style="width:300px;margin:0 auto;">填写成功！请扫码加入微信公众号</div>
+            <img src="~/Img/1.jpg" width="300px"/>
+    </div>
+    <script src="~/js/Addmanager.js"></script>
+</center>
+</body>
+</html>

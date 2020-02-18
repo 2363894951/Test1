@@ -1,0 +1,12 @@
+C:\Users\何鹏飞\Documents\Test\Tools\bin\Debug\Tools.dll
+C:\Users\何鹏飞\Documents\Test\Tools\bin\Debug\Tools.pdb
+C:\Users\何鹏飞\Documents\Test\Tools\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\何鹏飞\Documents\Test\Tools\bin\Debug\NPOI.dll
+C:\Users\何鹏飞\Documents\Test\Tools\bin\Debug\NPOI.OOXML.dll
+C:\Users\何鹏飞\Documents\Test\Tools\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\何鹏飞\Documents\Test\Tools\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\何鹏飞\Documents\Test\Tools\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\何鹏飞\Documents\Test\Tools\obj\Debug\Tools.csproj.CopyComplete
+C:\Users\何鹏飞\Documents\Test\Tools\obj\Debug\Tools.dll
+C:\Users\何鹏飞\Documents\Test\Tools\obj\Debug\Tools.pdb
+C:\Users\何鹏飞\Documents\Test\Tools\obj\Debug\Tools.csprojAssemblyReference.cache
